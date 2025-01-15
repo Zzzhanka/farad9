@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARADAY ENERGO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип FARADAY ENERGO">
+                <span>FARADAY ENERGO</span>
+            </div>
+            <div class="burger" onclick="toggleMenu()">
+                <span id="burger-icon">&#9776;</span> <!-- Три полоски -->
+                <span id="close-icon">&#10006;</span> <!-- Крестик -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" onclick="closeMenu()">О компании</a></li>
+                <li><a href="#portfolio" onclick="closeMenu()">Портфолио</a></li>
+                <li><a href="#services" onclick="closeMenu()">Услуги</a></li>
+                <li><a href="#team" onclick="closeMenu()">Наша команда</a></li>
+                <li><a href="#contacts" onclick="closeMenu()">Контакты</a></li>
+                <li><a href="#vacancies" onclick="closeMenu()">Вакансии</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Строительно-монтажные и электромонтажные работы</h1>
+            <p>Компания FARADAY ENERGO – ваш надёжный партнёр в сфере строительства промышленных объектов.</p>
+            <button class="btn" onclick="contactForm()">Связаться с нами</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/robot.jpg" alt="Робот в строительстве" />
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <h2>Наши услуги и цены</h2>
+        <div class="service-list">
+            <div class="service-item" style="background-color: #f0f0f0;">
+                <h3>Монтаж несущих конструкций зданий и <br> сооружений (ж/б конструкции <br> и металлические конструкции). <br> Монтаж ограждающих конструкций</h3>
+                <img src="images/services1.jpg" alt="services" />
+            </div>
+            <div class="service-item" style="background-color: #e0e0e0;">
+                <h3>Монолитные работы</h3>
+                <img src="images/services2.jpg" alt="services" />
+            </div>
+            <div class="service-item" style="background-color: #e0e0e0;">
+                <h3>Ремонт бульдозеров </h3>
+                <img src="images/services3.jpg" alt="services" />
+            </div>
+            <div class="service-item" style="background-color: #e0e0e0;">
+                <h3>Ремонт паровых и водогрейных котлов. </h3>
+                <img src="images/services4.jpg" alt="services" />
+            </div>
+            <div class="service-item" style="background-color: #e0e0e0;">
+                <h3> Ремонт градирен, ремонт дымовых труб </h3>
+                <img src="images/services5.jpg" alt="services" />
+            </div>
+            <div class="service-item" style="background-color: #e0e0e0;">
+                <h3>Монтаж антенно-мачтовых сооружений</h3>
+                <img src="images/services6.jpg" alt="services" />
+            </div>
+            <div class="service-item" style="background-color: #e0e0e0;">
+                <h3>Монтаж систем теплоснабжения и отопления </h3>
+                <img src="images/services8.jpg" alt="services" />
+            </div>
+            <div class="service-item" style="background-color: #e0e0e0;">
+                <h3>Монтаж систем холодного и горячего водоснабженияв </h3>
+                <img src="images/services7.jpg" alt="services" />
+            </div>
+            <div class="service-item" style="background-color: #e0e0e0;">
+                <h3>Монтаж линий электропередач (ВЛ, КЛ) </h3>
+                <img src="images/services9.jpg" alt="services" />
+            </div>
+            <div class="service-item" style="background-color: #e0e0e0;">
+                <h3>Монтаж подстанционного оборудования </h3>
+                <img src="images/services10.jpg" alt="services" />
+            </div>
+            <div class="service-item" style="background-color: #e0e0e0;">
+                <h3>Строительство и ремонт подъездных ЖД путей </h3>
+                <img src="images/services11.jpg" alt="services" />
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio" class="portfolio">
+        <h2>Наши проекты</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <img src="images/project1.jpg" alt="Проект 1">
+                <h3>Наружные сети электроснабжения, вынос ВЛ110КВ в районе нового коммунального автобусного парка</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project2.jpg" alt="Проект 2">
+                <h3>Наружные сети электроснабжения строительство КЛ20КВ от подстанцией ПС110/20КВ  "Аэропорт" до РТП 20/0.4КВ №5</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project3.jpg" alt="Проект 3">
+                <h3>Замена молотковых и дискозубчатых дробилок на ТЭЦ</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project4.jpg" alt="Проект 4">
+                <h3>Усиление несущих конструкций главного корпуса ТЭЦ</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project5.jpg" alt="Проект 5">
+                <h3>Восстановление обшивы градирни ТЭЦ</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project6.jpg" alt="Проект 6">
+                <h3>Каптильный ремонт вентиляторной градирни ТЭЦ</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project7.jpg" alt="Проект 7">
+                <h3>Ремонт ограждающих конструкции ТЭЦ</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section id="team" class="team">
+        <h2>Наша команда</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="images/team1.png" alt="Имя Фамилия">
+                <h3>Ибрагимов Марат</h3>
+                <p>Директор</p>
+                <p>Опыт работы в сфере энергетики 20 лет. Работал на руководящих должностях энергопредприятий более 8 лет. 
+                    Почетный энергетик Казахстана </p>
+            </div>
+            <div class="team-member">
+                <img src="images/team2.png" alt="Имя Фамилия">
+                <h3>Шакеев Казбек</h3>
+                <p>Технический Директор</p>
+                <p>Опыт работы в сфере энергетики 20 лет. Участвовал в строительстве ПС 110/10КВ 63МВА Кирова-2 г.Астана. 
+                    Рекострукция и новое строительство РП и ТП г.Астана. Переустройство ВЛ110КВ в индустриальном парке г.Астана </p>
+            </div>
+            <div class="team-member">
+                <img src="images/team3.png" alt="Имя Фамилия">
+                <h3>Анатолий Цой</h3>
+                <p>Менеджер проекта</p>
+                <p>Опыт работы в сфере энергетики 20 лет. Участвовал в реализации проекта транзит электроэнергии 
+                    "Север - Запад" и "Север-Юг" (строительство ВЛ-500КВ и ПС 500/220КВ ). Строительство комплексного 
+                    пунтка подготовки полувагонов на станции Карабатан.  </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vacancies" class="vacancies">
+        <h2>Вакансии</h2>
+        <div class="vacancy-list">
+            <!-- <div class="vacancy-item">
+                <h3>Инженер-электрик</h3>
+                <p>Обязанности: проектирование и монтаж электрических систем.</p>
+                <button class="btn">Отправить резюме</button>
+            </div>
+            <div class="vacancy-item">
+                <h3>Проектировщик</h3>
+                <p>Обязанности: разработка проектной документации для строительных объектов.</p>
+                <button class="btn">Отправить резюме</button>
+            </div>
+            <div class="vacancy-item">
+                <h3>Менеджер по продажам</h3>
+                <p>Обязанности: работа с клиентами и партнерами, заключение контрактов.</p>
+                <button class="btn">Отправить резюме</button>
+            </div> -->
+        </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <h2>Связаться с нами</h2>
+        <div class="contactall">
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш Email" required>
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+            <div class="contact-info">
+                <h3>Контакты</h3>
+                <p><strong>Почта:</strong> faradastana@gmail.com</p>
+                <p><strong>Телефон:</strong> +7 701 921 61 36</p>
+                <p><strong>WhatsApp:</strong>+7 771 345 44 94 </p> 
+                <button > <a href= https://wa.me/77713454494></a>Написать в WhatsApp</button>
+                <li><a href= https://wa.me/77713454494>О компании</a></li></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 FARADAY ENERGO. Все права защищены.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("service_30600dd"); // Получите в EmailJS
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.send("service_30600dd","template_bbl3njp", {
+      name: this.name.value,
+      email: this.email.value,
+      message: this.message.value
+    })
+    .then(response => {
+      alert("Сообщение отправлено!");
+      this.reset();
+    })
+    .catch(error => console.error("Ошибка:", error));
+  });
+</script>
+        
+</body>
+</html>
